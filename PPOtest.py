@@ -18,6 +18,7 @@ while True:
     obs, rewards, done, info = env.step(action)
     episode_starts=done
     time.sleep(0.025)
+
     if done:
         if info['is_success']:
             suc+=1.0
