@@ -7,7 +7,7 @@ from utils import *
 env=gym.make('NeedleReach-v0', render_mode='human')
 env=TimeLimit(env, max_episode_steps=50)
 env=RGBWrapper(env)
-model=RecurrentPPO.load("td3-reach-img7")
+model=RecurrentPPO.load("ppo-reach")
 
 lstm_states = None
 episode_starts = np.ones(1, dtype=bool)
